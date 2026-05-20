@@ -11,7 +11,7 @@ const educationList = [
     period: "2022 - 2025",
     description:
       "Comprehensive study of computer science fundamentals including algorithms, data structures, software engineering, and web development. Participated in various academic projects focusing on full-stack development.",
-    highlights: ["Full Stack Development", "Database Management", "Software Engineering", "UX/UI Design"],
+    highlights: ["React.js & Next.js", "Laravel & PHP", "UX/UI Design"]
   },
   {
     degree: "Advanced Development Program",
@@ -20,7 +20,7 @@ const educationList = [
     period: "2024 - 2025",
     description:
       "Intensive program focused on modern web development technologies and industry best practices. Gained hands-on experience with enterprise-level development tools and methodologies.",
-    highlights: ["React.js & Next.js", "Laravel & PHP", "Docker & Deployment", "Java Spring Framework"],
+    highlights: [ "Docker & Deployment", "Java Spring Framework","Full Stack Development", "Database Management", "Software Engineering", "UX/UI Design"],
   },
   {
     degree: "Australian Center For Education",

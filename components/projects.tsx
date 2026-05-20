@@ -8,7 +8,7 @@ const featuredProjects = [
     title: "Autonomous Project",
     description:
       "An autonomous web application focused on intelligent workflow automation, combining a responsive user interface with backend services for managing data, actions, and real-time project behavior.",
-    technologies: ["Next.js", "React.js", "TypeScript", "Laravel", "PostgreSQL", "Tailwind CSS"],
+    technologies: ["Next.js", "React.js", "TypeScript", "Spring Boot", "PostgreSQL", "Tailwind CSS"],
     github: "#",
     external: "https://autonomous-istad.com/home",
     icon: Bot,

@@ -2,6 +2,8 @@
 
 import { Camera, MapPin, Sparkles } from "lucide-react"
 
+import { profile } from "@/lib/profile"
+
 export function ProfilePhoto() {
   return (
     <section id="profile-photo" className="relative overflow-hidden px-6 py-24">
@@ -15,14 +17,15 @@ export function ProfilePhoto() {
           <div className="group relative overflow-hidden rounded-3xl glass-premium p-3 hover-lift">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-card">
               <img
-                src="/sorn-sophamarinet.jpg"
-                alt="Sorn Sophamarinet portrait"
-                className="h-full w-full object-cover object-[center_18%] transition-transform duration-700 group-hover:scale-105"
+                src={profile.image.src}
+                alt={profile.image.alt}
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                style={{ objectPosition: profile.image.position }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-primary/20 bg-background/80 p-4 backdrop-blur-xl">
-                <p className="text-xs font-mono text-primary">Sorn Sophamarinet</p>
-                <p className="mt-1 text-sm text-muted-foreground">Full Stack Web Developer</p>
+                <p className="text-xs font-mono text-primary">{profile.name}</p>
+                <p className="mt-1 text-sm text-muted-foreground">{profile.role}</p>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Code2, Server, Cloud, Database, GitBranch, Palette, Globe } from "lucide-react"
+import { Code2, Server, Cloud, Database, GitBranch, Palette, Globe, Github, Gitlab, Figma, Terminal, Boxes, Braces, Wrench } from "lucide-react"
 
 const skillCategories = [
   {
@@ -54,7 +54,7 @@ const skillCategories = [
     skills: [
       { name: "Git/GitHub", level: 70 },
       { name: "GitLab", level: 50 },
-      { name: "Jira", level: 30 },
+      { name: "API Testing", level: 40 },
       { name: "Linux", level: 65 },
     ],
   },
@@ -74,6 +74,17 @@ const skillCategories = [
 const languages = [
   { name: "Khmer", level: "Native", percentage: 100, flag: "KH" },
   { name: "English", level: "Professional", percentage: 75, flag: "US" },
+]
+
+const tools = [
+  { name: "GitHub", logo: "GH", icon: Github, color: "from-zinc-500/20 to-slate-500/20" },
+  { name: "GitLab", logo: "GL", icon: Gitlab, color: "from-orange-500/20 to-amber-500/20" },
+  { name: "Figma", logo: "FG", icon: Figma, color: "from-pink-500/20 to-violet-500/20" },
+  { name: "Docker", logo: "DK", icon: Boxes, color: "from-sky-500/20 to-cyan-500/20" },
+  { name: "Terminal", logo: "CLI", icon: Terminal, color: "from-emerald-500/20 to-teal-500/20" },
+  { name: "Postman", logo: "API", icon: Braces, color: "from-orange-500/20 to-red-500/20" },
+  { name: "VS Code", logo: "VS", icon: Code2, color: "from-cyan-500/20 to-blue-500/20" },
+  { name: "Dev Tools", logo: "DT", icon: Wrench, color: "from-yellow-500/20 to-lime-500/20" },
 ]
 
 export function Skills() {
@@ -133,6 +144,8 @@ export function Skills() {
               return (
                 <div
                   key={categoryIndex}
+                  data-aos="fade-up"
+                  data-aos-delay={categoryIndex * 80}
                   className={`group relative transition-all duration-700 ${
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
                   }`}
@@ -193,8 +206,48 @@ export function Skills() {
             })}
           </div>
 
+          {/* Tools Logos Section */}
+          <div className="mb-16">
+            <div className="mb-8 text-center" data-aos="fade-up">
+              <span className="inline-block px-4 py-1.5 rounded-full glass text-primary text-sm font-mono mb-4">
+                Tools
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Tools I Use</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Daily tools and platforms for design, development, collaboration, and deployment
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
+              {tools.map((tool, index) => {
+                const Icon = tool.icon
+                return (
+                  <div
+                    key={tool.name}
+                    data-aos="zoom-in"
+                    data-aos-delay={index * 70}
+                    className="group relative min-h-32 rounded-2xl glass p-4 text-center hover-lift overflow-hidden"
+                  >
+                    <div className={`absolute inset-0 bg-gradient-to-br ${tool.color} opacity-0 transition-opacity duration-500 group-hover:opacity-100`} />
+                    <div className="relative z-10 flex h-full flex-col items-center justify-center gap-3">
+                      <div className={`relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${tool.color} ring-1 ring-primary/10 transition-transform duration-300 group-hover:scale-110`}>
+                        <Icon className="h-6 w-6 text-primary" />
+                        <span className="absolute -right-2 -top-2 rounded-lg bg-background px-1.5 py-0.5 text-[10px] font-bold text-primary shadow-sm ring-1 ring-primary/10">
+                          {tool.logo}
+                        </span>
+                      </div>
+                      <p className="text-sm font-medium text-foreground">{tool.name}</p>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+
           {/* Languages Section */}
           <div
+            data-aos="fade-up"
+            data-aos-delay="120"
             className={`glass rounded-2xl p-8 transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
