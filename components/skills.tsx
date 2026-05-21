@@ -5,69 +5,69 @@ import { Code2, Server, Cloud, Database, GitBranch, Palette, Globe, Github, Gitl
 
 const skillCategories = [
   {
-    title: "Robotics & Control",
-    icon: Code2,
-    color: "from-cyan-500 to-blue-500",
-    skills: [
-      { name: "ROS2", level: 85 },
-      { name: "MoveIt2", level: 80 },
-      { name: "Kinematics & Dynamics", level: 75 },
-      { name: "Motion Planning", level: 80 },
-    ],
-  },
-  {
-    title: "Embedded Systems",
-    icon: Server,
-    color: "from-purple-500 to-pink-500",
-    skills: [
-      { name: "STM32CubeIDE", level: 75 },
-      { name: "Arduino IDE", level: 80 },
-      { name: "C/C++", level: 85 },
-      { name: "Firmware Development", level: 75 },
-    ],
-  },
-  {
     title: "Mechanical Design",
     icon: Cloud,
     color: "from-orange-500 to-red-500",
     skills: [
-      { name: "SolidWorks", level: 85 },
-      { name: "Solid Edge", level: 70 },
-      { name: "3D Modeling", level: 85 },
-      { name: "CAD Design", level: 80 },
+      { name: "SolidWorks", level: 90 },
+      { name: "Solid Edge", level: 75 },
+      { name: "3D CAD Modeling", level: 90 },
+      { name: "Robot Framework Design", level: 85 },
     ],
   },
   {
-    title: "Electronics & PCB",
+    title: "Electrical Design",
     icon: Database,
     color: "from-green-500 to-emerald-500",
     skills: [
-      { name: "Kicad", level: 80 },
-      { name: "PCB Design", level: 80 },
-      { name: "Schematic Design", level: 80 },
-      { name: "Battery Management", level: 75 },
+      { name: "Kicad", level: 85 },
+      { name: "PCB Design", level: 85 },
+      { name: "Schematic Design", level: 85 },
+      { name: "BMS Design", level: 80 },
     ],
   },
   {
-    title: "Programming",
+    title: "Coding",
+    icon: Code2,
+    color: "from-cyan-500 to-blue-500",
+    skills: [
+      { name: "MATLAB", level: 80 },
+      { name: "Arduino IDE", level: 85 },
+      { name: "Python", level: 85 },
+      { name: "C/C++", level: 80 },
+    ],
+  },
+  {
+    title: "Robotics & Control",
     icon: GitBranch,
+    color: "from-purple-500 to-pink-500",
+    skills: [
+      { name: "ROS2", level: 85 },
+      { name: "MoveIt2", level: 80 },
+      { name: "Forward/Inverse Kinematics", level: 85 },
+      { name: "Trajectory Generation", level: 80 },
+    ],
+  },
+  {
+    title: "Operating Systems",
+    icon: Palette,
     color: "from-yellow-500 to-orange-500",
     skills: [
-      { name: "Python", level: 85 },
-      { name: "MATLAB", level: 75 },
-      { name: "Git/GitHub", level: 80 },
-      { name: "Linux", level: 75 },
+      { name: "Linux (Ubuntu)", level: 85 },
+      { name: "STM32CubeIDE", level: 80 },
+      { name: "System Configuration", level: 75 },
+      { name: "Embedded Programming", level: 80 },
     ],
   },
   {
-    title: "Analysis & Simulation",
-    icon: Palette,
+    title: "Soft Skills",
+    icon: Server,
     color: "from-pink-500 to-rose-500",
     skills: [
-      { name: "MATLAB/Simulink", level: 75 },
-      { name: "Control Theory", level: 70 },
-      { name: "Robot Simulation", level: 80 },
-      { name: "System Analysis", level: 75 },
+      { name: "Problem-Solving", level: 90 },
+      { name: "Organization & Multitasking", level: 85 },
+      { name: "Communication", level: 80 },
+      { name: "Team Collaboration", level: 85 },
     ],
   },
 ]
@@ -79,14 +79,14 @@ const languages = [
 ]
 
 const tools = [
-  { name: "GitHub", logo: "GH", icon: Github, color: "from-zinc-500/20 to-slate-500/20" },
   { name: "SolidWorks", logo: "SW", icon: Code2, color: "from-cyan-500/20 to-blue-500/20" },
-  { name: "Kicad", logo: "KC", icon: Braces, color: "from-orange-500/20 to-red-500/20" },
-  { name: "ROS2", logo: "ROS", icon: Boxes, color: "from-sky-500/20 to-cyan-500/20" },
-  { name: "MATLAB", logo: "ML", icon: Terminal, color: "from-emerald-500/20 to-teal-500/20" },
-  { name: "STM32 IDE", logo: "ST", icon: Wrench, color: "from-purple-500/20 to-pink-500/20" },
-  { name: "VS Code", logo: "VS", icon: Code2, color: "from-yellow-500/20 to-lime-500/20" },
-  { name: "Linux", logo: "LX", icon: Terminal, color: "from-red-500/20 to-orange-500/20" },
+  { name: "Solid Edge", logo: "SE", icon: Code2, color: "from-orange-500/20 to-red-500/20" },
+  { name: "Kicad", logo: "KC", icon: Braces, color: "from-green-500/20 to-emerald-500/20" },
+  { name: "MATLAB", logo: "ML", icon: Terminal, color: "from-red-500/20 to-pink-500/20" },
+  { name: "Arduino IDE", logo: "ARD", icon: Boxes, color: "from-sky-500/20 to-cyan-500/20" },
+  { name: "ROS2", logo: "ROS", icon: Wrench, color: "from-purple-500/20 to-pink-500/20" },
+  { name: "STM32 IDE", logo: "ST", icon: Terminal, color: "from-yellow-500/20 to-orange-500/20" },
+  { name: "Linux/Ubuntu", logo: "LX", icon: Github, color: "from-red-500/20 to-orange-500/20" },
 ]
 
 export function Skills() {
@@ -135,7 +135,7 @@ export function Skills() {
               <span className="gradient-text">Technical Expertise</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive robotics engineering skills including mechanical design, embedded systems, and autonomous control
+              Technical expertise spanning mechanical design, electrical engineering, robotics, and embedded systems development
             </p>
           </div>
 
@@ -214,9 +214,9 @@ export function Skills() {
               <span className="inline-block px-4 py-1.5 rounded-full glass text-primary text-sm font-mono mb-4">
                 Tools & Platforms
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Primary Development Tools</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Key Tools & Software</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Tools for robotics design, simulation, embedded programming, and PCB development
+                Essential tools used for mechanical design, electrical design, coding, and robotics development
               </p>
             </div>
 
