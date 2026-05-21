@@ -5,23 +5,26 @@ import { User, Briefcase, GraduationCap, Heart } from "lucide-react"
 
 const techStack = [
   "ROS2",
-  "Arduino IDE",
+  "MoveIt2",
   "Python",
   "C++",
   "MATLAB",
+  "Arduino IDE",
   "Kicad",
   "SolidWorks",
   "Solid Edge",
-  "Ubuntu Linux",
   "STM32CubeIDE",
+  "Ubuntu Linux",
+  "Git/GitHub",
 ]
 
 const softSkills = [
   { name: "Problem-Solving", icon: "🧩" },
   { name: "Mechanical Design", icon: "⚙️" },
+  { name: "Kinematics & Dynamics", icon: "🔧" },
   { name: "Team Collaboration", icon: "🤝" },
   { name: "Technical Analysis", icon: "📊" },
-  { name: "Documentation", icon: "📝" },
+  { name: "Organization & Multitasking", icon: "📋" },
 ]
 
 export function About() {
@@ -50,7 +53,7 @@ export function About() {
     { icon: User, label: "About" },
     { icon: Briefcase, label: "Experience" },
     { icon: GraduationCap, label: "Education" },
-    { icon: Heart, label: "Interests" },
+    { icon: Heart, label: "Languages" },
   ]
 
   return (
@@ -176,11 +179,11 @@ export function About() {
                         <Briefcase className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground">Web Development Internship</h4>
-                        <p className="text-primary text-sm">ISTAD</p>
+                        <h4 className="font-semibold text-foreground">Engineer Intern</h4>
+                        <p className="text-primary text-sm">AI Farm Robotics Factory</p>
                         <p className="text-muted-foreground text-sm mt-2">
-                          Built e-commerce platforms using React.js and Laravel. Collaborated with teams 
-                          to deliver scalable web solutions.
+                          Designed stepper motor driver PCBs and Battery Management System for autonomous robots. 
+                          Tested control systems using STM32CubeIDE.
                         </p>
                       </div>
                     </div>
@@ -189,11 +192,11 @@ export function About() {
                         <Heart className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground">Volunteer IT Support</h4>
-                        <p className="text-primary text-sm">KPJ Charity Organization</p>
+                        <h4 className="font-semibold text-foreground">Volunteer English Teacher</h4>
+                        <p className="text-primary text-sm">Taramana</p>
                         <p className="text-muted-foreground text-sm mt-2">
-                          Provided technical support and helped with digital literacy programs 
-                          for underprivileged communities.
+                          Co-taught beginner English evening classes with Khmer and French volunteers. 
+                          Developed tailored lesson plans for approximately 20 students.
                         </p>
                       </div>
                     </div>
@@ -207,9 +210,9 @@ export function About() {
                         <GraduationCap className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground">Bachelor of Computer Science</h4>
-                        <p className="text-primary text-sm">Royal University of Phnom Penh</p>
-                        <p className="text-muted-foreground text-sm">2020 - 2024</p>
+                        <h4 className="font-semibold text-foreground">Master of Robotics & Automation</h4>
+                        <p className="text-primary text-sm">ECAM LaSalle Phnom Penh</p>
+                        <p className="text-muted-foreground text-sm">2023 - 2025</p>
                       </div>
                     </div>
                     <div className="flex gap-4">
@@ -217,9 +220,9 @@ export function About() {
                         <GraduationCap className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground">Advanced Development Program</h4>
-                        <p className="text-primary text-sm">ISTAD</p>
-                        <p className="text-muted-foreground text-sm">2023 - 2024</p>
+                        <h4 className="font-semibold text-foreground">Bachelor of Mechanical Engineering</h4>
+                        <p className="text-primary text-sm">Institute of Technology of Cambodia</p>
+                        <p className="text-muted-foreground text-sm">2020 - 2025</p>
                       </div>
                     </div>
                     <div className="flex gap-4">
@@ -227,25 +230,42 @@ export function About() {
                         <GraduationCap className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground">Australian Center For Education</h4>
-                        <p className="text-primary text-sm">ACE</p>
-                        <p className="text-muted-foreground text-sm">2022 - 2025</p>
+                        <h4 className="font-semibold text-foreground">High School Diploma</h4>
+                        <p className="text-primary text-sm">Presh Monyvong High School</p>
+                        <p className="text-muted-foreground text-sm">2015 - 2020</p>
                       </div>
                     </div>
                   </div>
                 )}
 
                 {activeTab === 3 && (
-                  <div className="space-y-4 animate-scale-in">
-                    <p className="text-muted-foreground">
-                      When I&apos;m not coding, I enjoy:
-                    </p>
-                    <div className="grid grid-cols-2 gap-3">
-                      {["🎮 Gaming", "📚 Learning New Tech", "🎬 Movies", "🏃 Exercise", "☕ Coffee", "🎵 Music"].map((interest) => (
-                        <div key={interest} className="flex items-center gap-2 p-3 rounded-lg bg-secondary/50 text-sm">
-                          {interest}
-                        </div>
-                      ))}
+                  <div className="space-y-6 animate-scale-in">
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="font-semibold text-foreground">Khmer</h4>
+                        <span className="text-xs px-2 py-1 rounded bg-primary/20 text-primary font-medium">Native</span>
+                      </div>
+                      <div className="w-full bg-secondary/50 rounded-full h-2">
+                        <div className="bg-primary h-2 rounded-full w-full" />
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="font-semibold text-foreground">English</h4>
+                        <span className="text-xs px-2 py-1 rounded bg-primary/20 text-primary font-medium">Good</span>
+                      </div>
+                      <div className="w-full bg-secondary/50 rounded-full h-2">
+                        <div className="bg-primary h-2 rounded-full w-4/5" />
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="font-semibold text-foreground">French</h4>
+                        <span className="text-xs px-2 py-1 rounded bg-primary/20 text-primary font-medium">Average</span>
+                      </div>
+                      <div className="w-full bg-secondary/50 rounded-full h-2">
+                        <div className="bg-primary h-2 rounded-full w-3/5" />
+                      </div>
                     </div>
                   </div>
                 )}

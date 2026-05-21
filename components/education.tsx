@@ -10,7 +10,7 @@ const educationList = [
     location: "Phnom Penh, Cambodia",
     period: "2023 - 2025",
     description:
-      "Specialized graduate program in robotics and automation engineering. Focused on advanced topics including motion planning, control systems, robotic vision, and autonomous systems design with hands-on laboratory work.",
+      "Specialized graduate program in robotics and automation engineering with advanced focus on motion planning, control systems, robotic vision, and autonomous systems design. Comprehensive hands-on laboratory work with real robotic systems and industrial applications.",
     highlights: ["ROS2", "Motion Planning", "Control Systems", "Robotic Vision", "Kinematics", "MoveIt2"]
   },
   {
@@ -19,17 +19,17 @@ const educationList = [
     location: "Phnom Penh, Cambodia",
     period: "2020 - 2025",
     description:
-      "Comprehensive engineering program covering mechanical design, dynamics, control systems, manufacturing processes, and robotics. Completed thesis project on 4-DOF SCARA robot with kinematics and trajectory planning.",
-    highlights: [ "SolidWorks", "MATLAB", "Robotics", "Kinematics", "CAD Design", "Systems Engineering"],
+      "Comprehensive engineering program covering mechanical design, dynamics, control systems, manufacturing processes, and robotics. Thesis project: 4-DOF SCARA robot with complete kinematic analysis, forward/inverse kinematics algorithms, and real-time trajectory planning implementation.",
+    highlights: [ "SolidWorks", "MATLAB", "Robotics", "Kinematics", "CAD Design", "Control Systems"],
   },
   {
-    degree: "English Language & Communication",
+    degree: "High School Diploma",
     school: "Presh Monyvong High School",
     location: "Battambang, Cambodia",
     period: "2015 - 2020",
     description:
-      "Secondary education with strong emphasis on mathematics, sciences, and English language proficiency, preparing foundation for higher engineering studies.",
-    highlights: ["Mathematics", "Physics", "Chemistry", "English Proficiency", "Technical Fundamentals"],
+      "Secondary education with strong emphasis on mathematics, sciences, and English language proficiency. Foundation studies in physics, chemistry, and technical fundamentals preparing for higher engineering education.",
+    highlights: ["Mathematics", "Physics", "Chemistry", "English", "Technical Fundamentals"],
   },
 ]
 
