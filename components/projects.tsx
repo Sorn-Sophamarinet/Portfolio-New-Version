@@ -7,7 +7,7 @@ const featuredProjects = [
   {
     title: "4-DOF SCARA Robot Thesis",
     description:
-      "Engineered a 4-DOF SCARA robot featuring stepper motors, BLDC motors, 3D printed components, and harmonic drives. Integrated pneumatic vacuum gripper for delicate object handling. Implemented forward/inverse kinematics and real-time motion planning using ROS2 with MoveIt2.",
+      "Master's thesis: Engineered a 4-DOF selective compliant articulated robot with stepper and BLDC motors, FDM 3D-printed components, and harmonic drive reducers. Integrated pneumatic vacuum gripper for precise object manipulation. Implemented complete kinematic analysis with forward/inverse kinematics algorithms. Developed real-time motion planning and trajectory generation using ROS2 with MoveIt2 for autonomous robot operation.",
     technologies: ["ROS2", "MoveIt2", "Python", "C++", "SolidWorks", "Kinematics"],
     github: "https://github.com/panhavann09/thesis-SCARA-2025",
     external: "https://github.com/panhavann09/thesis-SCARA-2025",
@@ -15,9 +15,9 @@ const featuredProjects = [
     color: "from-emerald-500/20 to-cyan-500/20",
   },
   {
-    title: "PCB Board Design - Robocon 2022",
+    title: "PCB Control Board - Robocon 2022",
     description:
-      "Designed and developed main control board for Robocon 2022 competition robot. Implemented stepper motor driver circuitry, power management, and sensor interfaces using Kicad PCB design software for reliable robot operation.",
+      "Designed main PCB control board for national robot competition. Integrated stepper motor drivers, power management circuits, sensor conditioning interfaces, and microcontroller connections. Optimized PCB layout using Kicad for minimal noise and reliable operation under dynamic competition conditions with real-time control requirements.",
     technologies: ["Kicad", "PCB Design", "Schematic Design", "Motor Control", "Electronics"],
     github: "https://github.com/panhavann09/PCB-Board-2022",
     external: "https://github.com/panhavann09/PCB-Board-2022",
@@ -27,20 +27,20 @@ const featuredProjects = [
   {
     title: "Robocon 2023 Mechanical Design",
     description:
-      "Led mechanical design team for 10th National Robot Competition. Created comprehensive 3D CAD models of robot framework using SolidWorks. Designed mechanical transmission systems and structural components achieving Second Runner-Up position.",
-    technologies: ["SolidWorks", "CAD Design", "3D Modeling", "Mechanical Design", "Assembly Design"],
+      "Mechanical design lead for Cambodia's 10th National Robot Competition entry. Created comprehensive 3D CAD models using SolidWorks including robot frame structure, transmission systems, joint assemblies, and load-bearing components. Optimized designs for manufacturability and competition requirements. Team achieved 2nd Runner-Up award through innovative mechanical engineering.",
+    technologies: ["SolidWorks", "CAD Design", "3D Modeling", "Mechanical Assembly", "Engineering Design"],
     github: "https://github.com/panhavann09/robocon-2023",
     external: "https://github.com/panhavann09/robocon-2023",
     icon: Palette,
     color: "from-purple-500/20 to-pink-500/20",
   },
   {
-    title: "BMS - Battery Management System",
+    title: "Battery Management System (BMS)",
     description:
-      "Designed and tested Battery Management System for dog robot at AI Farm Robotics Factory. Implemented charging protection, voltage monitoring, and cell balancing for lithium battery packs to ensure safe and efficient operation.",
-    technologies: ["Kicad", "STM32CubeIDE", "Battery Design", "BMS Circuitry", "C++"],
-    github: "#",
-    external: "#",
+      "Internship project at AI Farm Robotics Factory: Designed and tested Battery Management System for autonomous quadruped robot. Implemented cell voltage monitoring, charging protection logic, current limiting, and cell balancing circuits. Ensured safe reliable operation of lithium battery packs under continuous autonomous robot operation and charging cycles.",
+    technologies: ["Kicad", "STM32CubeIDE", "Power Management", "Battery Design", "C++"],
+    github: "https://github.com/panhavann09",
+    external: "https://github.com/panhavann09",
     icon: Database,
     color: "from-orange-500/20 to-red-500/20",
   },
@@ -48,44 +48,44 @@ const featuredProjects = [
 
 const otherProjects = [
   {
-    title: "Arduino Embedded Systems",
-    description: "Various Arduino-based embedded systems projects including sensor integration, motor control, and real-time data processing for robotics applications.",
-    technologies: ["Arduino IDE", "C++", "Embedded Systems", "Sensors"],
+    title: "Motor Driver Circuits",
+    description: "Designed stepper and BLDC motor driver circuits with current limiting, thermal protection, and PWM control. Implemented using discrete MOSFETs and integrated driver ICs with proper heat dissipation design.",
+    technologies: ["Kicad", "Electronics", "Motor Control", "Power Design"],
     github: "#",
     external: "#",
   },
   {
-    title: "Python Robotics Scripts",
-    description: "Collection of Python scripts for robot control, data analysis, and automation tasks in research and industrial robotics applications.",
-    technologies: ["Python", "ROS2", "Data Processing", "Automation"],
+    title: "ROS2 Node Development",
+    description: "Developed custom ROS2 nodes for robot perception, planning, and control. Implemented message passing, service calls, and parameter servers for distributed robotic system architecture.",
+    technologies: ["ROS2", "Python", "C++", "Robot Middleware"],
     github: "#",
     external: "#",
   },
   {
-    title: "3D Mechanical Models",
-    description: "Comprehensive 3D CAD models of various robotic systems, mechanical assemblies, and components designed for manufacturability and optimization.",
-    technologies: ["SolidWorks", "Solid Edge", "CAD", "3D Printing"],
+    title: "3D Printed Robot Parts",
+    description: "Designed FDM 3D-printable mechanical components including motor mounts, brackets, joints, and enclosures. Optimized for strength-to-weight ratio and assembly with commercial components.",
+    technologies: ["SolidWorks", "CAD", "3D Printing", "Design for Manufacturing"],
     github: "#",
     external: "#",
   },
   {
-    title: "Stepper Motor Control",
-    description: "STM32-based stepper motor control system with precise motion profile generation and fault detection for precision robotics applications.",
-    technologies: ["STM32CubeIDE", "C", "Motor Control", "Embedded"],
+    title: "STM32 Embedded Programming",
+    description: "Developed firmware for STM32 microcontrollers including GPIO control, PWM generation, ADC sampling, and I2C/SPI communication for real-time robotic applications.",
+    technologies: ["STM32CubeIDE", "C", "Embedded Systems", "Firmware"],
     github: "#",
     external: "#",
   },
   {
-    title: "Sensor Integration Systems",
-    description: "Integration of various sensors including encoders, accelerometers, and proximity sensors for real-time feedback in autonomous systems.",
-    technologies: ["Arduino", "Sensors", "Data Acquisition", "C++"],
+    title: "Sensor Interfacing",
+    description: "Integrated encoders, IMU sensors, and distance sensors with microcontrollers for real-time feedback in robotic systems. Implemented calibration and filtering algorithms for sensor data.",
+    technologies: ["Arduino", "Sensors", "Signal Processing", "Data Acquisition"],
     github: "#",
     external: "#",
   },
   {
-    title: "MATLAB Control Simulations",
-    description: "MATLAB simulations for robot kinematics, dynamics, trajectory planning, and control system analysis for validation before hardware implementation.",
-    technologies: ["MATLAB", "Simulink", "Kinematics", "Control Systems"],
+    title: "MATLAB Robot Simulation",
+    description: "Developed MATLAB/Simulink models for robot kinematics, dynamics, and trajectory planning. Validated control algorithms before hardware implementation to ensure safety and performance.",
+    technologies: ["MATLAB", "Simulink", "Kinematics", "Control Design"],
     github: "#",
     external: "#",
   },
@@ -134,7 +134,7 @@ export function Projects() {
               <span className="gradient-text">Featured Projects</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A selection of projects I&apos;ve worked on, showcasing my skills in full-stack development
+              A selection of robotics and mechanical engineering projects showcasing expertise in system design, embedded electronics, and autonomous systems
             </p>
           </div>
 
