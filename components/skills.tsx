@@ -129,13 +129,13 @@ export function Skills() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full glass text-primary text-sm font-mono mb-4">
-              04. Skills
+              04. Engineering Expertise
             </span>
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-              <span className="gradient-text">Technical Expertise</span>
+              <span className="gradient-text">Technical Capabilities</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Technical expertise spanning mechanical design, electrical engineering, robotics, and embedded systems development
+              Comprehensive engineering skills covering mechanical design, CAD modeling, electrical systems, robotics control, and embedded programming
             </p>
           </div>
 

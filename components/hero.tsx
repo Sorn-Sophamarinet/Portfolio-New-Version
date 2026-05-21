@@ -104,9 +104,9 @@ export function Hero() {
             </div>
             
             <p className="text-muted-foreground max-w-xl text-lg leading-relaxed animate-slide-from-left" style={{ animationDelay: "0.9s" }}>
-              A passionate robotics engineer and current student specializing in Robotics and Automation Engineering 
-              at <span className="text-primary font-medium hover:neon-glow transition-all cursor-default">ECAM LaSalle Phnom Penh</span>, 
-              with expertise in mechanical design, embedded systems, and autonomous robotics.
+              Mechanical and robotics engineer specializing in precision mechanical design, embedded control systems, and autonomous robot development. 
+              Currently pursuing a Master's degree at <span className="text-primary font-medium hover:neon-glow transition-all cursor-default">ECAM LaSalle Phnom Penh</span> 
+              with a passion for innovative engineering solutions.
             </p>
 
             {/* Rotating tech stack */}
@@ -219,28 +219,25 @@ export function Hero() {
                       <span className="text-pink-400">const</span> <span className="text-cyan-400">developer</span> = {"{"}
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "0.6s" }}>
-                      {"  "}<span className="text-purple-400">name</span>: <span className="text-green-400">&quot;Panha&quot;</span>,
+                      {"[ENGINEER INFO]"}
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "0.7s" }}>
-                      {"  "}<span className="text-purple-400">role</span>: <span className="text-green-400">&quot;Robotics Engineer&quot;</span>,
+                      {"Name: "}<span className="text-green-400">Vann Panha</span>
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "0.8s" }}>
-                      {"  "}<span className="text-purple-400">skills</span>: [
+                      {"Specialization: "}<span className="text-green-400">Robotics & Mechanical</span>
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "0.9s" }}>
-                      {"    "}<span className="text-green-400">&quot;ROS2&quot;</span>,
+                      {"Design Tools: "}<span className="text-green-400">SolidWorks, Solid Edge</span>
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "1s" }}>
-                      {"    "}<span className="text-green-400">&quot;Arduino&quot;</span>,
+                      {"Control Systems: "}<span className="text-green-400">ROS2, MoveIt2</span>
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "1.1s" }}>
-                      {"    "}<span className="text-green-400">&quot;Python&quot;</span>,
+                      {"PCB Design: "}<span className="text-green-400">Kicad, Schematic</span>
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "1.2s" }}>
-                      {"    "}<span className="text-green-400">&quot;C++&quot;</span>,
-                    </code>
-                    <code className="block animate-reveal" style={{ animationDelay: "1.3s" }}>
-                      {"    "}<span className="text-green-400">&quot;Kicad&quot;</span>,
+                      {"Programming: "}<span className="text-green-400">C++, Python, MATLAB</span>
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "1.4s" }}>
                       {"  "}],

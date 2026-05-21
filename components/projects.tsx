@@ -128,13 +128,13 @@ export function Projects() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full glass text-primary text-sm font-mono mb-4">
-              03. My Work
+              03. Engineering Projects
             </span>
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-              <span className="gradient-text">Featured Projects</span>
+              <span className="gradient-text">Design & Implementation</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A selection of robotics and mechanical engineering projects showcasing expertise in system design, embedded electronics, and autonomous systems
+              Featured robotics and mechanical engineering projects demonstrating CAD design, kinematics analysis, PCB development, and system integration
             </p>
           </div>
 

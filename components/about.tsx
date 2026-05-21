@@ -82,7 +82,7 @@ export function About() {
               <span className="gradient-text">Who I Am</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A passionate developer dedicated to creating impactful digital experiences
+              Mechanical engineer specializing in robotics design, kinematics, and embedded control systems
             </p>
           </div>
 
@@ -154,20 +154,19 @@ export function About() {
                 {activeTab === 0 && (
                   <div className="space-y-4 animate-scale-in">
                     <p className="text-muted-foreground leading-relaxed">
-                      Hello! I&apos;m <span className="text-primary font-medium">Panha</span>, 
-                      a passionate robotics and automation engineer from Battambang, Cambodia. 
-                      I am dedicated to designing and developing innovative robotic systems that solve real-world problems 
-                      and push the boundaries of mechanical and electrical engineering.
+                      I&apos;m <span className="text-primary font-medium">Vann Panha</span>, a mechanical engineer focused on robotics design and autonomous systems. 
+                      I specialize in precision mechanical design, kinematics modeling, embedded control systems, and bringing complex engineering concepts 
+                      from CAD to real-world functional robots.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Currently pursuing a degree in <span className="text-primary font-medium">Robotics and Automation Engineering</span> at 
-                      ECAM LaSalle Phnom Penh, while also studying Mechanical and Industrial Engineering at 
-                      the Institute of Technology of Cambodia (ITC).
+                      Currently pursuing a Master's in <span className="text-primary font-medium">Robotics and Automation Engineering</span> at 
+                      ECAM LaSalle Phnom Penh, with a Bachelor's in Mechanical Engineering from the Institute of Technology of Cambodia. 
+                      My work bridges mechanical design, electrical integration, and control system implementation.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      My expertise includes mechanical design, embedded systems programming, motion planning, 
-                      and real-time control systems. I have hands-on experience with <span className="text-primary font-medium">SCARA robots, 
-                      PCB design, battery management systems</span>, and competition robotics through Robocon.
+                      Technical background spans <span className="text-primary font-medium">4-DOF SCARA robot kinematics, mechanical design with SolidWorks/Solid Edge, 
+                      PCB layout and electronics design, embedded firmware, and motion planning algorithms</span>. I approach every project with precision 
+                      engineering principles and a commitment to reliable, manufacturable solutions.
                     </p>
                   </div>
                 )}
