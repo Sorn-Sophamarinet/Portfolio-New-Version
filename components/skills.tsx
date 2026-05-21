@@ -5,86 +5,88 @@ import { Code2, Server, Cloud, Database, GitBranch, Palette, Globe, Github, Gitl
 
 const skillCategories = [
   {
-    title: "Frontend",
+    title: "Robotics & Control",
     icon: Code2,
     color: "from-cyan-500 to-blue-500",
     skills: [
-      { name: "React.js", level: 70 },
-      { name: "Next.js", level: 75 },
-      { name: "TypeScript", level: 60 },
-      { name: "Tailwind CSS", level: 80 },
+      { name: "ROS2", level: 85 },
+      { name: "MoveIt2", level: 80 },
+      { name: "Kinematics & Dynamics", level: 75 },
+      { name: "Motion Planning", level: 80 },
     ],
   },
   {
-    title: "Backend",
+    title: "Embedded Systems",
     icon: Server,
     color: "from-purple-500 to-pink-500",
     skills: [
-      { name: "PHP/Laravel", level: 50 },
-      { name: "Java Spring", level: 60 },
-      { name: "Node.js", level: 40 },
+      { name: "STM32CubeIDE", level: 75 },
+      { name: "Arduino IDE", level: 80 },
+      { name: "C/C++", level: 85 },
+      { name: "Firmware Development", level: 75 },
     ],
   },
   {
-    title: "DevOps & Cloud",
+    title: "Mechanical Design",
     icon: Cloud,
     color: "from-orange-500 to-red-500",
     skills: [
-      { name: "Docker", level: 75 },
-      { name: "Kubernetes", level: 60 },
-      { name: "CI/CD", level: 65 },
-      { name: "AWS", level: 45 },
+      { name: "SolidWorks", level: 85 },
+      { name: "Solid Edge", level: 70 },
+      { name: "3D Modeling", level: 85 },
+      { name: "CAD Design", level: 80 },
     ],
   },
   {
-    title: "Database",
+    title: "Electronics & PCB",
     icon: Database,
     color: "from-green-500 to-emerald-500",
     skills: [
-      { name: "PostgreSQL", level: 70 },
-      { name: "MySQL", level: 70 },
-      { name: "MongoDB", level: 30 },
-      { name: "Redis", level: 20 },
+      { name: "Kicad", level: 80 },
+      { name: "PCB Design", level: 80 },
+      { name: "Schematic Design", level: 80 },
+      { name: "Battery Management", level: 75 },
     ],
   },
   {
-    title: "Tools & VCS",
+    title: "Programming",
     icon: GitBranch,
     color: "from-yellow-500 to-orange-500",
     skills: [
-      { name: "Git/GitHub", level: 70 },
-      { name: "GitLab", level: 50 },
-      { name: "API Testing", level: 40 },
-      { name: "Linux", level: 65 },
+      { name: "Python", level: 85 },
+      { name: "MATLAB", level: 75 },
+      { name: "Git/GitHub", level: 80 },
+      { name: "Linux", level: 75 },
     ],
   },
   {
-    title: "Design & CMS",
+    title: "Analysis & Simulation",
     icon: Palette,
     color: "from-pink-500 to-rose-500",
     skills: [
-      { name: "Figma", level: 70 },
-      { name: "UI/UX", level: 65},
-      { name: "WordPress", level: 30 },
-      { name: "OpenCart", level: 30 },
+      { name: "MATLAB/Simulink", level: 75 },
+      { name: "Control Theory", level: 70 },
+      { name: "Robot Simulation", level: 80 },
+      { name: "System Analysis", level: 75 },
     ],
   },
 ]
 
 const languages = [
   { name: "Khmer", level: "Native", percentage: 100, flag: "KH" },
-  { name: "English", level: "Professional", percentage: 75, flag: "US" },
+  { name: "English", level: "Good", percentage: 80, flag: "US" },
+  { name: "French", level: "Average", percentage: 60, flag: "FR" },
 ]
 
 const tools = [
   { name: "GitHub", logo: "GH", icon: Github, color: "from-zinc-500/20 to-slate-500/20" },
-  { name: "GitLab", logo: "GL", icon: Gitlab, color: "from-orange-500/20 to-amber-500/20" },
-  { name: "Figma", logo: "FG", icon: Figma, color: "from-pink-500/20 to-violet-500/20" },
-  { name: "Docker", logo: "DK", icon: Boxes, color: "from-sky-500/20 to-cyan-500/20" },
-  { name: "Terminal", logo: "CLI", icon: Terminal, color: "from-emerald-500/20 to-teal-500/20" },
-  { name: "Postman", logo: "API", icon: Braces, color: "from-orange-500/20 to-red-500/20" },
-  { name: "VS Code", logo: "VS", icon: Code2, color: "from-cyan-500/20 to-blue-500/20" },
-  { name: "Dev Tools", logo: "DT", icon: Wrench, color: "from-yellow-500/20 to-lime-500/20" },
+  { name: "SolidWorks", logo: "SW", icon: Code2, color: "from-cyan-500/20 to-blue-500/20" },
+  { name: "Kicad", logo: "KC", icon: Braces, color: "from-orange-500/20 to-red-500/20" },
+  { name: "ROS2", logo: "ROS", icon: Boxes, color: "from-sky-500/20 to-cyan-500/20" },
+  { name: "MATLAB", logo: "ML", icon: Terminal, color: "from-emerald-500/20 to-teal-500/20" },
+  { name: "STM32 IDE", logo: "ST", icon: Wrench, color: "from-purple-500/20 to-pink-500/20" },
+  { name: "VS Code", logo: "VS", icon: Code2, color: "from-yellow-500/20 to-lime-500/20" },
+  { name: "Linux", logo: "LX", icon: Terminal, color: "from-red-500/20 to-orange-500/20" },
 ]
 
 export function Skills() {
@@ -133,7 +135,7 @@ export function Skills() {
               <span className="gradient-text">Technical Expertise</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive overview of my technical skills and proficiency levels
+              Comprehensive robotics engineering skills including mechanical design, embedded systems, and autonomous control
             </p>
           </div>
 
@@ -210,11 +212,11 @@ export function Skills() {
           <div className="mb-16">
             <div className="mb-8 text-center" data-aos="fade-up">
               <span className="inline-block px-4 py-1.5 rounded-full glass text-primary text-sm font-mono mb-4">
-                Tools
+                Tools & Platforms
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Tools I Use</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Primary Development Tools</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Daily tools and platforms for design, development, collaboration, and deployment
+                Tools for robotics design, simulation, embedded programming, and PCB development
               </p>
             </div>
 
@@ -316,7 +318,7 @@ export function Skills() {
 
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-2xl">{lang.flag === "KH" ? "🇰🇭" : "🇺🇸"}</span>
+                      <span className="text-2xl">{lang.flag === "KH" ? "🇰🇭" : lang.flag === "US" ? "🇺🇸" : "🇫🇷"}</span>
                       <h4 className="text-xl font-semibold text-foreground">{lang.name}</h4>
                     </div>
                     <p className="text-primary font-medium">{lang.level}</p>
