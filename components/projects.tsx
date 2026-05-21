@@ -5,40 +5,40 @@ import { Github, ExternalLink, Folder, ArrowRight, Code2, Layers, Database, Pale
 
 const featuredProjects = [
   {
-    title: "Autonomous Project",
+    title: "4-DOF SCARA Robot Thesis",
     description:
-      "An autonomous web application focused on intelligent workflow automation, combining a responsive user interface with backend services for managing data, actions, and real-time project behavior.",
-    technologies: ["Next.js", "React.js", "TypeScript", "Spring Boot", "PostgreSQL", "Tailwind CSS"],
-    github: "#",
-    external: "https://autonomous-istad.com/home",
+      "Engineered a 4-DOF SCARA robot featuring stepper motors, BLDC motors, 3D printed components, and harmonic drives. Integrated pneumatic vacuum gripper for delicate object handling. Implemented forward/inverse kinematics and real-time motion planning using ROS2 with MoveIt2.",
+    technologies: ["ROS2", "MoveIt2", "Python", "C++", "SolidWorks", "Kinematics"],
+    github: "https://github.com/panhavann09/thesis-SCARA-2025",
+    external: "https://github.com/panhavann09/thesis-SCARA-2025",
     icon: Bot,
     color: "from-emerald-500/20 to-cyan-500/20",
   },
   {
-    title: "E-Commerce Platform",
+    title: "PCB Board Design - Robocon 2022",
     description:
-      "A full-featured e-commerce platform built with React.js and Laravel, featuring product management, shopping cart, secure checkout, and admin dashboard for managing orders and inventory.",
-    technologies: ["React.js", "Laravel", "PostgreSQL", "Tailwind CSS", "Docker"],
-    github: "#",
-    external: "#",
+      "Designed and developed main control board for Robocon 2022 competition robot. Implemented stepper motor driver circuitry, power management, and sensor interfaces using Kicad PCB design software for reliable robot operation.",
+    technologies: ["Kicad", "PCB Design", "Schematic Design", "Motor Control", "Electronics"],
+    github: "https://github.com/panhavann09/PCB-Board-2022",
+    external: "https://github.com/panhavann09/PCB-Board-2022",
     icon: Layers,
     color: "from-cyan-500/20 to-blue-500/20",
   },
   {
-    title: "WordPress Custom Theme",
+    title: "Robocon 2023 Mechanical Design",
     description:
-      "Custom WordPress theme development for business websites, including responsive design, SEO optimization, and integration with popular plugins for enhanced functionality.",
-    technologies: ["WordPress", "PHP", "JavaScript", "CSS", "MySQL"],
-    github: "#",
-    external: "#",
+      "Led mechanical design team for 10th National Robot Competition. Created comprehensive 3D CAD models of robot framework using SolidWorks. Designed mechanical transmission systems and structural components achieving Second Runner-Up position.",
+    technologies: ["SolidWorks", "CAD Design", "3D Modeling", "Mechanical Design", "Assembly Design"],
+    github: "https://github.com/panhavann09/robocon-2023",
+    external: "https://github.com/panhavann09/robocon-2023",
     icon: Palette,
     color: "from-purple-500/20 to-pink-500/20",
   },
   {
-    title: "OpenCart Store Setup",
+    title: "BMS - Battery Management System",
     description:
-      "Complete OpenCart e-commerce store setup with custom extensions, payment gateway integration, and inventory management system for small to medium businesses.",
-    technologies: ["OpenCart", "PHP", "MySQL", "Bootstrap", "REST API"],
+      "Designed and tested Battery Management System for dog robot at AI Farm Robotics Factory. Implemented charging protection, voltage monitoring, and cell balancing for lithium battery packs to ensure safe and efficient operation.",
+    technologies: ["Kicad", "STM32CubeIDE", "Battery Design", "BMS Circuitry", "C++"],
     github: "#",
     external: "#",
     icon: Database,
@@ -48,44 +48,44 @@ const featuredProjects = [
 
 const otherProjects = [
   {
-    title: "Joomla CMS Website",
-    description: "Custom Joomla website with advanced content management features and user authentication system.",
-    technologies: ["Joomla", "PHP", "MySQL"],
+    title: "Arduino Embedded Systems",
+    description: "Various Arduino-based embedded systems projects including sensor integration, motor control, and real-time data processing for robotics applications.",
+    technologies: ["Arduino IDE", "C++", "Embedded Systems", "Sensors"],
     github: "#",
     external: "#",
   },
   {
-    title: "PHP E-Commerce",
-    description: "Pure PHP e-commerce solution with secure payment processing and inventory tracking.",
-    technologies: ["PHP", "MySQL", "JavaScript"],
+    title: "Python Robotics Scripts",
+    description: "Collection of Python scripts for robot control, data analysis, and automation tasks in research and industrial robotics applications.",
+    technologies: ["Python", "ROS2", "Data Processing", "Automation"],
     github: "#",
     external: "#",
   },
   {
-    title: "UX/UI Design Portfolio",
-    description: "Collection of UI/UX designs created in Figma for various web and mobile applications.",
-    technologies: ["Figma", "UI/UX", "Prototyping"],
+    title: "3D Mechanical Models",
+    description: "Comprehensive 3D CAD models of various robotic systems, mechanical assemblies, and components designed for manufacturability and optimization.",
+    technologies: ["SolidWorks", "Solid Edge", "CAD", "3D Printing"],
     github: "#",
     external: "#",
   },
   {
-    title: "Spring Boot API",
-    description: "RESTful API built with Java Spring Framework for handling backend operations and data management.",
-    technologies: ["Java", "Spring Boot", "PostgreSQL"],
+    title: "Stepper Motor Control",
+    description: "STM32-based stepper motor control system with precise motion profile generation and fault detection for precision robotics applications.",
+    technologies: ["STM32CubeIDE", "C", "Motor Control", "Embedded"],
     github: "#",
     external: "#",
   },
   {
-    title: "Docker Dev Environment",
-    description: "Containerized development environment setup for consistent deployment across different machines.",
-    technologies: ["Docker", "Docker Compose", "Linux"],
+    title: "Sensor Integration Systems",
+    description: "Integration of various sensors including encoders, accelerometers, and proximity sensors for real-time feedback in autonomous systems.",
+    technologies: ["Arduino", "Sensors", "Data Acquisition", "C++"],
     github: "#",
     external: "#",
   },
   {
-    title: "Database Architecture",
-    description: "Complex database architecture design with optimized queries and proper indexing for performance.",
-    technologies: ["PostgreSQL", "Database Design", "SQL"],
+    title: "MATLAB Control Simulations",
+    description: "MATLAB simulations for robot kinematics, dynamics, trajectory planning, and control system analysis for validation before hardware implementation.",
+    technologies: ["MATLAB", "Simulink", "Kinematics", "Control Systems"],
     github: "#",
     external: "#",
   },
@@ -307,7 +307,7 @@ export function Projects() {
           {/* View More Button */}
           <div className="text-center mt-12">
             <a
-              href="https://github.com"
+              href="https://github.com/panhavann09"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl glass text-foreground font-medium hover:text-primary hover:border-primary/50 transition-all duration-300 hover-lift group"

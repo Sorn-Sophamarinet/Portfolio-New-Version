@@ -5,9 +5,9 @@ import { Mail, Phone, MapPin, Send, User, MessageSquare, Sparkles, ArrowUpRight,
 import { DownloadCvButton } from "@/components/download-cv-button"
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
+  { icon: Github, href: "https://github.com/panhavann09", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:netsorn7777@gmail.com", label: "Email" },
+  { icon: Mail, href: "mailto:panhavann09@gmail.com", label: "Email" },
 ]
 
 export function Contact() {
@@ -67,7 +67,7 @@ export function Contact() {
               {/* Quick Contact Cards */}
               <div className="space-y-4">
                 <a
-                  href="mailto:netsorn7777@gmail.com"
+                  href="mailto:panhavann09@gmail.com"
                   className="group flex items-center gap-4 p-5 glass rounded-2xl hover-lift"
                 >
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
@@ -76,14 +76,14 @@ export function Contact() {
                   <div className="flex-1">
                     <p className="text-sm text-muted-foreground mb-1">Email me at</p>
                     <p className="text-foreground font-medium group-hover:text-primary transition-colors">
-                      netsorn7777@gmail.com
+                      panhavann09@gmail.com
                     </p>
                   </div>
                   <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
                 </a>
 
                 <a
-                  href="tel:+855889203806"
+                  href="tel:+85514699106"
                   className="group flex items-center gap-4 p-5 glass rounded-2xl hover-lift"
                 >
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
@@ -92,7 +92,7 @@ export function Contact() {
                   <div className="flex-1">
                     <p className="text-sm text-muted-foreground mb-1">Call me at</p>
                     <p className="text-foreground font-medium group-hover:text-primary transition-colors">
-                      +855 889203806
+                      +855 14699106
                     </p>
                   </div>
                   <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
@@ -105,7 +105,7 @@ export function Contact() {
                   <div className="flex-1">
                     <p className="text-sm text-muted-foreground mb-1">Located in</p>
                     <p className="text-foreground font-medium">
-                      Toul Kork, Phnom Penh, Cambodia
+                      Battambang, Cambodia
                     </p>
                   </div>
                 </div>

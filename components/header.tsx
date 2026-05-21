@@ -62,7 +62,7 @@ export function Header() {
             >
               <span className="relative z-10 flex items-center gap-1">
                 <span className="text-primary">&lt;</span>
-                <span className="gradient-text">SM</span>
+                <span className="gradient-text">VP</span>
                 <span className="text-primary">/&gt;</span>
               </span>
               <span className="absolute -inset-2 rounded-lg bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity blur-sm" />
@@ -113,7 +113,7 @@ export function Header() {
               <ThemeToggle />
               <DownloadCvButton variant="compact" />
               <a
-                href="mailto:netsorn7777@gmail.com"
+                href="mailto:panhavann09@gmail.com"
                 className="inline-flex items-center gap-2 rounded-lg border border-primary/50 px-5 py-2.5 text-sm font-medium text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary hover:shadow-lg hover:shadow-primary/25 group magnetic-btn"
               >
                 <span>Get In Touch</span>
@@ -200,7 +200,7 @@ export function Header() {
             </div>
             <DownloadCvButton variant="glass" className="w-full" />
             <a
-              href="mailto:netsorn7777@gmail.com"
+              href="mailto:panhavann09@gmail.com"
               className="flex items-center justify-center gap-2 w-full rounded-lg border border-primary bg-primary/10 px-6 py-4 text-base font-medium text-primary transition-all hover:bg-primary hover:text-primary-foreground"
             >
               Get In Touch

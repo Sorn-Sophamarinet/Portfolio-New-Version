@@ -5,40 +5,31 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react"
 
 const educationList = [
   {
-    degree: "Bachelor of Computer Science",
-    school: "Royal University of Phnom Penh",
+    degree: "Master of Robotics and Automation Engineering",
+    school: "ECAM LaSalle Phnom Penh",
     location: "Phnom Penh, Cambodia",
-    period: "2022 - 2025",
+    period: "2023 - 2025",
     description:
-      "Comprehensive study of computer science fundamentals including algorithms, data structures, software engineering, and web development. Participated in various academic projects focusing on full-stack development.",
-    highlights: ["React.js & Next.js", "Laravel & PHP", "UX/UI Design"]
+      "Specialized graduate program in robotics and automation engineering. Focused on advanced topics including motion planning, control systems, robotic vision, and autonomous systems design with hands-on laboratory work.",
+    highlights: ["ROS2", "Motion Planning", "Control Systems", "Robotic Vision", "Kinematics", "MoveIt2"]
   },
   {
-    degree: "Advanced Development Program",
-    school: "Institute of Science Technology Advanced Development (ISTAD)",
+    degree: "Bachelor of Mechanical and Industrial Engineering",
+    school: "Institute of Technology of Cambodia",
     location: "Phnom Penh, Cambodia",
-    period: "2024 - 2025",
+    period: "2020 - 2025",
     description:
-      "Intensive program focused on modern web development technologies and industry best practices. Gained hands-on experience with enterprise-level development tools and methodologies.",
-    highlights: [ "Docker & Deployment", "Java Spring Framework","Full Stack Development", "Database Management", "Software Engineering", "UX/UI Design"],
+      "Comprehensive engineering program covering mechanical design, dynamics, control systems, manufacturing processes, and robotics. Completed thesis project on 4-DOF SCARA robot with kinematics and trajectory planning.",
+    highlights: [ "SolidWorks", "MATLAB", "Robotics", "Kinematics", "CAD Design", "Systems Engineering"],
   },
   {
-    degree: "Australian Center For Education",
-    school: "ACE",
-    location: "Phnom Penh, Cambodia",
-    period: "2022 - 2025",
+    degree: "English Language & Communication",
+    school: "Presh Monyvong High School",
+    location: "Battambang, Cambodia",
+    period: "2015 - 2020",
     description:
-      "English language proficiency and communication skills development program, enhancing professional communication abilities for the global workplace.",
-    highlights: ["English Proficiency", "Professional Communication", "Academic Writing"],
-  },
-  {
-    degree: "High School Diploma",
-    school: "Chruh Busra High School",
-    location: "Mondolkiri Province, Cambodia",
-    period: "2019 - 2021",
-    description:
-      "Completed secondary education with focus on mathematics and sciences, laying the foundation for further studies in computer science.",
-    highlights: ["Mathematics", "Sciences", "Computer Fundamentals"],
+      "Secondary education with strong emphasis on mathematics, sciences, and English language proficiency, preparing foundation for higher engineering studies.",
+    highlights: ["Mathematics", "Physics", "Chemistry", "English Proficiency", "Technical Fundamentals"],
   },
 ]
 

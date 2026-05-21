@@ -4,10 +4,10 @@ import { Github, Linkedin, Mail, Phone, Heart, ArrowUp, Code2 } from "lucide-rea
 import { DownloadCvButton } from "@/components/download-cv-button"
 
 const socialLinks = [
-  { name: "GitHub", href: "https://github.com", icon: Github },
+  { name: "GitHub", href: "https://github.com/panhavann09", icon: Github },
   { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
-  { name: "Email", href: "mailto:netsorn7777@gmail.com", icon: Mail },
-  { name: "Phone", href: "tel:+855889203806", icon: Phone },
+  { name: "Email", href: "mailto:panhavann09@gmail.com", icon: Mail },
+  { name: "Phone", href: "tel:+85514699106", icon: Phone },
 ]
 
 const quickLinks = [
@@ -50,11 +50,11 @@ export function Footer() {
               <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                 <Code2 className="w-5 h-5 text-primary" />
               </div>
-              <span className="text-xl font-bold gradient-text">SM</span>
+              <span className="text-xl font-bold gradient-text">VP</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mb-6">
-              Full Stack Web Developer passionate about creating beautiful, functional, 
-              and user-centered digital experiences.
+              Robotics and Automation Engineer dedicated to designing innovative robotic systems 
+              that solve real-world problems and push the boundaries of mechanical engineering.
             </p>
             <DownloadCvButton variant="glass" className="mb-6" />
             {/* Social Links */}
@@ -96,16 +96,16 @@ export function Footer() {
             <h4 className="text-sm font-semibold text-foreground mb-4">Get in Touch</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="mailto:netsorn7777@gmail.com" className="hover:text-primary transition-colors">
-                  netsorn7777@gmail.com
+                <a href="mailto:panhavann09@gmail.com" className="hover:text-primary transition-colors">
+                  panhavann09@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+855889203806" className="hover:text-primary transition-colors">
-                  +855 889203806
+                <a href="tel:+85514699106" className="hover:text-primary transition-colors">
+                  +855 14699106
                 </a>
               </li>
-              <li>Phnom Penh, Cambodia</li>
+              <li>Battambang, Cambodia</li>
             </ul>
           </div>
         </div>
@@ -114,7 +114,7 @@ export function Footer() {
         <div className="pt-8 border-t border-border/50">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-muted-foreground flex items-center gap-1">
-              &copy; {new Date().getFullYear()} Sorn Sophamarinet. Made with 
+              &copy; {new Date().getFullYear()} Vann Panha. Made with 
               <Heart className="w-3 h-3 text-red-500 fill-red-500 animate-pulse" />
             </p>
             <p className="text-xs text-muted-foreground font-mono">

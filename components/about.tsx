@@ -4,24 +4,24 @@ import { useEffect, useRef, useState } from "react"
 import { User, Briefcase, GraduationCap, Heart } from "lucide-react"
 
 const techStack = [
-  "React.js",
-  "Next.js",
-  "Laravel",
-  "Java (Spring)",
-  "PostgreSQL",
-  "Docker",
-  "TypeScript",
-  "Figma",
-  "Kubernetes",
-  "AWS",
+  "ROS2",
+  "Arduino IDE",
+  "Python",
+  "C++",
+  "MATLAB",
+  "Kicad",
+  "SolidWorks",
+  "Solid Edge",
+  "Ubuntu Linux",
+  "STM32CubeIDE",
 ]
 
 const softSkills = [
-  { name: "Good Communication", icon: "💬" },
   { name: "Problem-Solving", icon: "🧩" },
-  { name: "Time Management", icon: "⏰" },
-  { name: "Presentation Skills", icon: "🎯" },
+  { name: "Mechanical Design", icon: "⚙️" },
   { name: "Team Collaboration", icon: "🤝" },
+  { name: "Technical Analysis", icon: "📊" },
+  { name: "Documentation", icon: "📝" },
 ]
 
 export function About() {
@@ -93,18 +93,18 @@ export function About() {
                   <div className="relative mx-auto w-32 h-32 mb-6">
                     <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-primary/50 animate-morph" />
                     <div className="absolute inset-1 rounded-full bg-card flex items-center justify-center">
-                      <span className="text-4xl font-bold gradient-text">SM</span>
+                      <span className="text-4xl font-bold gradient-text">VP</span>
                     </div>
                   </div>
                   
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-foreground mb-1">Sorn Sophamarinet</h3>
-                    <p className="text-primary font-mono text-sm mb-4">Full Stack Developer</p>
+                    <h3 className="text-xl font-bold text-foreground mb-1">Vann Panha</h3>
+                    <p className="text-primary font-mono text-sm mb-4">Robotics Engineer</p>
                     
                     {/* Stats */}
                     <div className="grid grid-cols-3 gap-4 py-4 border-t border-b border-border/50">
                       <div>
-                        <div className="text-2xl font-bold text-primary">3+</div>
+                        <div className="text-2xl font-bold text-primary">4+</div>
                         <div className="text-xs text-muted-foreground">Projects</div>
                       </div>
                       <div>
@@ -113,13 +113,13 @@ export function About() {
                       </div>
                       <div>
                         <div className="text-2xl font-bold text-primary">2</div>
-                        <div className="text-xs text-muted-foreground">Certs</div>
+                        <div className="text-xs text-muted-foreground">Awards</div>
                       </div>
                     </div>
                     
                     {/* Location */}
                     <div className="mt-4 text-sm text-muted-foreground">
-                      📍 Phnom Penh, Cambodia
+                      📍 Battambang, Cambodia
                     </div>
                   </div>
                 </div>
@@ -151,20 +151,20 @@ export function About() {
                 {activeTab === 0 && (
                   <div className="space-y-4 animate-scale-in">
                     <p className="text-muted-foreground leading-relaxed">
-                      Hello! I&apos;m <span className="text-primary font-medium">Sophamarinet</span>, 
-                      a passionate full stack web developer based in Phnom Penh, Cambodia. 
-                      I enjoy creating things that live on the internet, whether that be websites, 
-                      applications, or anything in between.
+                      Hello! I&apos;m <span className="text-primary font-medium">Panha</span>, 
+                      a passionate robotics and automation engineer from Battambang, Cambodia. 
+                      I am dedicated to designing and developing innovative robotic systems that solve real-world problems 
+                      and push the boundaries of mechanical and electrical engineering.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      I am a fresh graduate in <span className="text-primary font-medium">Computer Science</span> from 
-                      the Royal University of Phnom Penh, with strong interests in web development, 
-                      UX/UI design, and database management.
+                      Currently pursuing a degree in <span className="text-primary font-medium">Robotics and Automation Engineering</span> at 
+                      ECAM LaSalle Phnom Penh, while also studying Mechanical and Industrial Engineering at 
+                      the Institute of Technology of Cambodia (ITC).
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      I also completed an <span className="text-primary font-medium">Advanced Development Program</span> at 
-                      the Institute of Science Technology Advanced Development (ISTAD), where I deepened 
-                      my knowledge in modern web technologies and best practices.
+                      My expertise includes mechanical design, embedded systems programming, motion planning, 
+                      and real-time control systems. I have hands-on experience with <span className="text-primary font-medium">SCARA robots, 
+                      PCB design, battery management systems</span>, and competition robotics through Robocon.
                     </p>
                   </div>
                 )}

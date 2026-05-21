@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Sorn Sophamarinet | Full Stack Web Developer',
-  description: 'Full Stack Web Developer specializing in React.js, Next.js, Laravel, and modern web technologies. Fresh graduate from Royal University of Phnom Penh.',
+  title: 'Vann Panha | Robotics & Automation Engineer',
+  description: 'Robotics and Automation Engineer specializing in mechanical design, embedded systems, ROS2, and autonomous robotics. SCARA robot design and PCB development expertise.',
   generator: 'v0.app',
   icons: {
     icon: [

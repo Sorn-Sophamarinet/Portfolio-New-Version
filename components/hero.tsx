@@ -4,13 +4,13 @@ import { useEffect, useState, useRef } from "react"
 import { Github, Linkedin, Mail, Phone, MapPin, ArrowDown, Code2, Sparkles, Terminal, Zap } from "lucide-react"
 import { DownloadCvButton } from "@/components/download-cv-button"
 
-const TECH_STACK = ["React.js", "Next.js", "Laravel", "TypeScript", "Docker", "PostgreSQL"]
+const TECH_STACK = ["Robotics", "Arduino", "Python", "C++", "ROS2", "SolidWorks"]
 
 export function Hero() {
   const [mounted, setMounted] = useState(false)
   const [typedText, setTypedText] = useState("")
   const [currentTechIndex, setCurrentTechIndex] = useState(0)
-  const fullText = "Full Stack Web Developer"
+  const fullText = "Robotics & Automation Engineer"
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -91,8 +91,8 @@ export function Hero() {
                   data-aos-duration="900"
                   style={{ animationDelay: "0.5s" }}
                 >
-                  <span>Sorn</span>
-                  <span>Sophamarinet</span>
+                  <span>Vann</span>
+                  <span>Panha</span>
                 </span>
               </h1>
               
@@ -104,9 +104,9 @@ export function Hero() {
             </div>
             
             <p className="text-muted-foreground max-w-xl text-lg leading-relaxed animate-slide-from-left" style={{ animationDelay: "0.9s" }}>
-              A passionate developer and fresh graduate in Computer Science 
-              from the <span className="text-primary font-medium hover:neon-glow transition-all cursor-default">Royal University of Phnom Penh</span>, 
-              specializing in building exceptional digital experiences with modern technologies.
+              A passionate robotics engineer and current student specializing in Robotics and Automation Engineering 
+              at <span className="text-primary font-medium hover:neon-glow transition-all cursor-default">ECAM LaSalle Phnom Penh</span>, 
+              with expertise in mechanical design, embedded systems, and autonomous robotics.
             </p>
 
             {/* Rotating tech stack */}
@@ -128,26 +128,26 @@ export function Hero() {
 
             {/* Contact Info */}
             <div className="flex flex-wrap gap-4 text-sm text-muted-foreground animate-slide-from-left" style={{ animationDelay: "1.1s" }}>
-              <a href="mailto:netsorn7777@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors group magnetic-btn">
+              <a href="mailto:panhavann09@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors group magnetic-btn">
                 <Mail className="h-4 w-4 group-hover:scale-110 transition-transform" />
-                <span className="underline-animate">netsorn7777@gmail.com</span>
+                <span className="underline-animate">panhavann09@gmail.com</span>
               </a>
-              <a href="tel:+855889203806" className="flex items-center gap-2 hover:text-primary transition-colors group magnetic-btn">
+              <a href="tel:+85514699106" className="flex items-center gap-2 hover:text-primary transition-colors group magnetic-btn">
                 <Phone className="h-4 w-4 group-hover:scale-110 transition-transform" />
-                <span className="underline-animate">+855 889203806</span>
+                <span className="underline-animate">+855 14699106</span>
               </a>
             </div>
             <div className="flex items-center gap-2 text-sm text-muted-foreground animate-slide-from-left" style={{ animationDelay: "1.2s" }}>
               <MapPin className="h-4 w-4 text-primary animate-bounce-subtle" />
-              St.289, Toul Kork, Phnom Penh, Cambodia
+              St. 156z, Tek Laak 2, Toul Kork, Phnom Penh, Cambodia
             </div>
 
             {/* Social Links */}
             <div className="flex gap-4 pt-2 animate-slide-from-left" style={{ animationDelay: "1.3s" }}>
               {[
-                { icon: Github, href: "https://github.com", label: "GitHub" },
+                { icon: Github, href: "https://github.com/panhavann09", label: "GitHub" },
                 { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-                { icon: Mail, href: "mailto:netsorn7777@gmail.com", label: "Email" },
+                { icon: Mail, href: "mailto:panhavann09@gmail.com", label: "Email" },
               ].map(({ icon: Icon, href, label }, index) => (
                 <a
                   key={label}
@@ -219,28 +219,28 @@ export function Hero() {
                       <span className="text-pink-400">const</span> <span className="text-cyan-400">developer</span> = {"{"}
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "0.6s" }}>
-                      {"  "}<span className="text-purple-400">name</span>: <span className="text-green-400">&quot;Sophamarinet&quot;</span>,
+                      {"  "}<span className="text-purple-400">name</span>: <span className="text-green-400">&quot;Panha&quot;</span>,
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "0.7s" }}>
-                      {"  "}<span className="text-purple-400">role</span>: <span className="text-green-400">&quot;Full Stack Dev&quot;</span>,
+                      {"  "}<span className="text-purple-400">role</span>: <span className="text-green-400">&quot;Robotics Engineer&quot;</span>,
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "0.8s" }}>
                       {"  "}<span className="text-purple-400">skills</span>: [
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "0.9s" }}>
-                      {"    "}<span className="text-green-400">&quot;React.js&quot;</span>,
+                      {"    "}<span className="text-green-400">&quot;ROS2&quot;</span>,
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "1s" }}>
-                      {"    "}<span className="text-green-400">&quot;Next.js&quot;</span>,
+                      {"    "}<span className="text-green-400">&quot;Arduino&quot;</span>,
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "1.1s" }}>
-                      {"    "}<span className="text-green-400">&quot;Laravel&quot;</span>,
+                      {"    "}<span className="text-green-400">&quot;Python&quot;</span>,
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "1.2s" }}>
-                      {"    "}<span className="text-green-400">&quot;Java Spring&quot;</span>,
+                      {"    "}<span className="text-green-400">&quot;C++&quot;</span>,
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "1.3s" }}>
-                      {"    "}<span className="text-green-400">&quot;Docker&quot;</span>,
+                      {"    "}<span className="text-green-400">&quot;Kicad&quot;</span>,
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "1.4s" }}>
                       {"  "}],
@@ -265,25 +265,25 @@ export function Hero() {
               <div className="absolute -top-6 -right-6 px-4 py-2 rounded-xl glass-premium text-sm font-medium text-primary animate-float hover-lift" style={{ animationDelay: "0s" }}>
                 <span className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                  React.js
+                  ROS2
                 </span>
               </div>
               <div className="absolute -bottom-4 -left-6 px-4 py-2 rounded-xl glass-premium text-sm font-medium text-primary animate-float hover-lift" style={{ animationDelay: "1s" }}>
                 <span className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-                  Next.js
+                  Arduino
                 </span>
               </div>
               <div className="absolute top-1/2 -right-10 px-4 py-2 rounded-xl glass-premium text-sm font-medium text-primary animate-float hover-lift" style={{ animationDelay: "2s" }}>
                 <span className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-                  Laravel
+                  Python
                 </span>
               </div>
               <div className="absolute top-1/4 -left-8 px-4 py-2 rounded-xl glass-premium text-sm font-medium text-primary animate-float hover-lift" style={{ animationDelay: "3s" }}>
                 <span className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse" />
-                  Docker
+                  Kicad
                 </span>
               </div>
             </div>
