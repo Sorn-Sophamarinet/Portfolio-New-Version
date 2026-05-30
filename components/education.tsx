@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { GraduationCap, Calendar, MapPin } from "lucide-react"
+import { GraduationCap, Calendar, MapPin } from "@/components/fa-icons"
 
 const educationList = [
   {
@@ -10,17 +10,17 @@ const educationList = [
     location: "Phnom Penh, Cambodia",
     period: "2022 - 2025",
     description:
-      "Comprehensive study of computer science fundamentals including algorithms, data structures, software engineering, and web development. Participated in various academic projects focusing on full-stack development.",
-    highlights: ["React.js & Next.js", "Laravel & PHP", "UX/UI Design"]
+      "Comprehensive study of computer science fundamentals including algorithms, data structures, software engineering, database concepts, and web development foundations.",
+    highlights: ["Computer Science", "Software Engineering", "Database Fundamentals", "Web Development"]
   },
   {
-    degree: "Advanced Development Program",
+    degree: "Advanced Development Program - DevOps & Full Stack",
     school: "Institute of Science Technology Advanced Development (ISTAD)",
     location: "Phnom Penh, Cambodia",
     period: "2024 - 2025",
     description:
-      "Intensive program focused on modern web development technologies and industry best practices. Gained hands-on experience with enterprise-level development tools and methodologies.",
-    highlights: [ "Docker & Deployment", "Java Spring Framework","Full Stack Development", "Database Management", "Software Engineering", "UX/UI Design"],
+      "Intensive ISTAD program focused on modern full-stack development and DevOps practices, including containerization, deployment workflows, backend services, and production-oriented development tools.",
+    highlights: ["Docker", "Kubernetes", "CI/CD", "Deployment", "Java Spring Framework", "PostgreSQL"],
   },
   {
     degree: "Australian Center For Education",

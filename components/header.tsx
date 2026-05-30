@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
-import { Menu, X, ChevronRight } from "lucide-react"
+import { Menu, X, ChevronRight } from "@/components/fa-icons"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { DownloadCvButton } from "@/components/download-cv-button"
 
@@ -58,14 +58,18 @@ export function Header() {
             {/* Logo */}
             <a 
               href="#" 
-              className="group relative text-2xl font-bold text-primary transition-all duration-300 hover:scale-105"
+              className="group relative flex items-center gap-3 transition-all duration-300 hover:scale-105"
+              aria-label="Sorn Sophamarinet home"
             >
-              <span className="relative z-10 flex items-center gap-1">
-                <span className="text-primary">&lt;</span>
-                <span className="gradient-text">SM</span>
-                <span className="text-primary">/&gt;</span>
+              <span className="relative z-10 flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-primary/20 bg-primary/10 shadow-lg shadow-primary/10">
+                <img
+                  src="/marinet-logo.png"
+                  alt="Marinet logo"
+                  className="h-full w-full object-cover"
+                />
               </span>
-              <span className="absolute -inset-2 rounded-lg bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity blur-sm" />
+              <span className="hidden sm:block text-xl font-bold gradient-text">Marinet</span>
+              <span className="absolute -inset-2 rounded-2xl bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity blur-sm" />
             </a>
 
             {/* Desktop Navigation */}

@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { User, Briefcase, GraduationCap, Heart } from "lucide-react"
+import { User, Briefcase, GraduationCap, Heart } from "@/components/fa-icons"
 
 const techStack = [
   "React.js",
@@ -99,7 +99,7 @@ export function About() {
                   
                   <div className="text-center">
                     <h3 className="text-xl font-bold text-foreground mb-1">Sorn Sophamarinet</h3>
-                    <p className="text-primary font-mono text-sm mb-4">Full Stack Developer</p>
+                    <p className="text-primary font-mono text-sm mb-4">DevOps Engineer</p>
                     
                     {/* Stats */}
                     <div className="grid grid-cols-3 gap-4 py-4 border-t border-b border-border/50">
@@ -152,7 +152,7 @@ export function About() {
                   <div className="space-y-4 animate-scale-in">
                     <p className="text-muted-foreground leading-relaxed">
                       Hello! I&apos;m <span className="text-primary font-medium">Sophamarinet</span>, 
-                      a passionate full stack web developer based in Phnom Penh, Cambodia. 
+                      a passionate DevOps engineer based in Phnom Penh, Cambodia. 
                       I enjoy creating things that live on the internet, whether that be websites, 
                       applications, or anything in between.
                     </p>
@@ -209,7 +209,7 @@ export function About() {
                       <div>
                         <h4 className="font-semibold text-foreground">Bachelor of Computer Science</h4>
                         <p className="text-primary text-sm">Royal University of Phnom Penh</p>
-                        <p className="text-muted-foreground text-sm">2020 - 2024</p>
+                        <p className="text-muted-foreground text-sm">2021 - 2025</p>
                       </div>
                     </div>
                     <div className="flex gap-4">
@@ -219,7 +219,7 @@ export function About() {
                       <div>
                         <h4 className="font-semibold text-foreground">Advanced Development Program</h4>
                         <p className="text-primary text-sm">ISTAD</p>
-                        <p className="text-muted-foreground text-sm">2023 - 2024</p>
+                        <p className="text-muted-foreground text-sm">2024 - 2026</p>
                       </div>
                     </div>
                     <div className="flex gap-4">
@@ -229,7 +229,7 @@ export function About() {
                       <div>
                         <h4 className="font-semibold text-foreground">Australian Center For Education</h4>
                         <p className="text-primary text-sm">ACE</p>
-                        <p className="text-muted-foreground text-sm">2022 - 2025</p>
+                        <p className="text-muted-foreground text-sm">2021 - 2025</p>
                       </div>
                     </div>
                   </div>

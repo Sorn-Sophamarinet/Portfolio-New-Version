@@ -1,6 +1,6 @@
 "use client"
 
-import { Download } from "lucide-react"
+import { Download } from "@/components/fa-icons"
 
 import { cn } from "@/lib/utils"
 

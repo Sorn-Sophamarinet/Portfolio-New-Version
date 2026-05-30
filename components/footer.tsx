@@ -1,6 +1,6 @@
 "use client"
 
-import { Github, Linkedin, Mail, Phone, Heart, ArrowUp, Code2 } from "lucide-react"
+import { Github, Linkedin, Mail, Phone, Heart, ArrowUp } from "@/components/fa-icons"
 import { DownloadCvButton } from "@/components/download-cv-button"
 
 const socialLinks = [
@@ -47,13 +47,17 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Code2 className="w-5 h-5 text-primary" />
+              <div className="w-10 h-10 rounded-xl bg-primary/10 overflow-hidden border border-primary/20">
+                <img
+                  src="/marinet-logo.png"
+                  alt="Marinet logo"
+                  className="h-full w-full object-cover"
+                />
               </div>
-              <span className="text-xl font-bold gradient-text">SM</span>
+              <span className="text-xl font-bold gradient-text">Marinet</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mb-6">
-              Full Stack Web Developer passionate about creating beautiful, functional, 
+              DevOps Engineer passionate about reliable deployment, automation, 
               and user-centered digital experiences.
             </p>
             <DownloadCvButton variant="glass" className="mb-6" />
@@ -112,13 +116,10 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border/50">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-muted-foreground flex items-center gap-1">
+          <div className="flex justify-center">
+            <p className="text-xs text-muted-foreground flex flex-wrap justify-center text-center items-center gap-1">
               &copy; {new Date().getFullYear()} Sorn Sophamarinet. Made with 
               <Heart className="w-3 h-3 text-red-500 fill-red-500 animate-pulse" />
-            </p>
-            <p className="text-xs text-muted-foreground font-mono">
-              Built with Next.js + Tailwind CSS
             </p>
           </div>
         </div>

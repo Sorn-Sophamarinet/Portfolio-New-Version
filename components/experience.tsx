@@ -1,37 +1,36 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { ExternalLink, Briefcase, Code2, Heart, ChevronRight } from "lucide-react"
+import { ExternalLink, Briefcase, Code2, Heart, ChevronRight } from "@/components/fa-icons"
 
 const experiences = [
   {
-    title: "Small Project Developer",
+    title: "DevOps & Web Development ",
     company: "Institute of Science and Technology Advanced Development (ISTAD)",
     companyShort: "ISTAD",
     companyUrl: "https://istad.co",
-    period: "2022 - Present",
+    period: "2024 - 2025",
     description: [
-      "Developed multiple web applications using modern technologies including WordPress, OpenCart, and Joomla for content management systems.",
-      "Built full-stack e-commerce solutions using React.js with Laravel backend, implementing robust shopping cart and payment features.",
-      "Worked on PHP-based e-commerce projects, focusing on secure transactions and user experience optimization.",
+      "Learned DevOps practices at ISTAD, including Docker containerization, Kubernetes concepts, CI/CD workflows, and deployment fundamentals.",
+      "Built full-stack training projects using React.js, Next.js, Java Spring Framework, Laravel, and PostgreSQL.",
+      "Practiced GitHub, GitLab, Linux, and production-oriented development workflows through ISTAD hands-on assignments.",
     ],
-    technologies: ["WordPress", "OpenCart", "Joomla", "React.js", "Laravel", "PHP"],
+    technologies: ["Docker", "Kubernetes", "CI/CD", "GitHub", "GitLab", "Linux", "Next.js", "Spring Framework"],
     icon: Code2,
     color: "from-cyan-500/20 to-blue-500/20",
   },
   {
-    title: "Full Stack Developer",
+    title: "Computer Science Student",
     company: "Royal University of Phnom Penh",
     companyShort: "RUPP",
     companyUrl: "https://rupp.edu.kh",
     period: "2022 - 2025",
     description: [
-      "Designed and developed mechanism parts for university projects, focusing on user interaction and system architecture.",
-      "Created frontend interfaces and UX/UI designs using Figma, ensuring intuitive user experiences.",
-      "Managed databases with PostgreSQL and developed basic backend functionality with Java Spring Framework.",
-      "Implemented containerization and deployment strategies using Docker for consistent development environments.",
+      "Studied computer science fundamentals including programming, database concepts, software engineering, and web development foundations.",
+      "Created frontend interfaces and UX/UI designs using Figma for academic and practice projects.",
+      "Built academic projects using Java, PostgreSQL, and web technologies while strengthening problem-solving and system design basics.",
     ],
-    technologies: ["Figma", "PostgreSQL", "Java", "Spring Framework", "Docker", "Frontend Development"],
+    technologies: ["Java", "PostgreSQL", "Figma", "Web Development", "Software Engineering", "Database Fundamentals"],
     icon: Briefcase,
     color: "from-purple-500/20 to-pink-500/20",
   },

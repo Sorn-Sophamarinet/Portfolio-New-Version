@@ -1,6 +1,6 @@
 "use client"
 
-import { Camera, MapPin, Sparkles } from "lucide-react"
+import { Camera, MapPin, Sparkles } from "@/components/fa-icons"
 
 import { profile } from "@/lib/profile"
 
@@ -49,7 +49,7 @@ export function ProfilePhoto() {
             <div className="glass rounded-2xl p-5">
               <Sparkles className="mb-3 h-5 w-5 text-primary" />
               <p className="font-medium text-foreground">Open to opportunities</p>
-              <p className="mt-1 text-sm text-muted-foreground">Ready for junior and full stack roles.</p>
+              <p className="mt-1 text-sm text-muted-foreground">Ready for junior DevOps and cloud roles.</p>
             </div>
             <div className="glass rounded-2xl p-5">
               <MapPin className="mb-3 h-5 w-5 text-primary" />

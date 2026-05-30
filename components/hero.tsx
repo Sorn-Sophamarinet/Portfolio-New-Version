@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-import { Github, Linkedin, Mail, Phone, MapPin, ArrowDown, Code2, Sparkles, Terminal, Zap } from "lucide-react"
+import { Github, Linkedin, Mail, Phone, MapPin, ArrowDown, Code2, Sparkles, Terminal, Zap } from "@/components/fa-icons"
 import { DownloadCvButton } from "@/components/download-cv-button"
 
 const TECH_STACK = ["React.js", "Next.js", "Laravel", "TypeScript", "Docker", "PostgreSQL"]
@@ -10,7 +10,7 @@ export function Hero() {
   const [mounted, setMounted] = useState(false)
   const [typedText, setTypedText] = useState("")
   const [currentTechIndex, setCurrentTechIndex] = useState(0)
-  const fullText = "Full Stack Web Developer"
+  const fullText = "DevOps Engineer"
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -222,7 +222,7 @@ export function Hero() {
                       {"  "}<span className="text-purple-400">name</span>: <span className="text-green-400">&quot;Sophamarinet&quot;</span>,
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "0.7s" }}>
-                      {"  "}<span className="text-purple-400">role</span>: <span className="text-green-400">&quot;Full Stack Dev&quot;</span>,
+                      {"  "}<span className="text-purple-400">role</span>: <span className="text-green-400">&quot;DevOps Engineer&quot;</span>,
                     </code>
                     <code className="block animate-reveal" style={{ animationDelay: "0.8s" }}>
                       {"  "}<span className="text-purple-400">skills</span>: [

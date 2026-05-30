@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Mail, Phone, MapPin, Send, User, MessageSquare, Sparkles, ArrowUpRight, Github, Linkedin } from "lucide-react"
+import { Mail, Phone, MapPin, Send, User, MessageSquare, Sparkles, ArrowUpRight, Github, Linkedin } from "@/components/fa-icons"
 import { DownloadCvButton } from "@/components/download-cv-button"
 
 const socialLinks = [
@@ -161,7 +161,7 @@ export function Contact() {
                         type="text"
                         id="name"
                         name="name"
-                        placeholder="John Doe"
+                        placeholder="Name"
                         onFocus={() => setFormFocused('name')}
                         onBlur={() => setFormFocused(null)}
                         className="w-full pl-11 pr-4 py-3.5 rounded-xl bg-secondary/50 border-0 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:bg-secondary transition-colors"
@@ -178,7 +178,7 @@ export function Contact() {
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="john@example.com"
+                        placeholder="email@example.com"
                         onFocus={() => setFormFocused('email')}
                         onBlur={() => setFormFocused(null)}
                         className="w-full pl-11 pr-4 py-3.5 rounded-xl bg-secondary/50 border-0 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:bg-secondary transition-colors"

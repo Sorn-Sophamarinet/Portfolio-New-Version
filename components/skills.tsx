@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Code2, Server, Cloud, Database, GitBranch, Palette, Globe, Github, Gitlab, Figma, Terminal, Boxes, Braces, Wrench } from "lucide-react"
+import { Code2, Server, Cloud, Database, GitBranch, Palette, Globe, Github, Gitlab, Figma, Terminal, Boxes, Braces, Wrench } from "@/components/fa-icons"
 
 const skillCategories = [
   {
@@ -27,6 +27,7 @@ const skillCategories = [
   },
   {
     title: "DevOps & Cloud",
+    source: "Learned at ISTAD",
     icon: Cloud,
     color: "from-orange-500 to-red-500",
     skills: [
@@ -164,7 +165,12 @@ export function Skills() {
                           <Icon className="w-5 h-5 text-foreground" />
                         </div>
                       </div>
-                      <h3 className="text-lg font-semibold text-foreground">{category.title}</h3>
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground">{category.title}</h3>
+                        {"source" in category && (
+                          <p className="mt-0.5 text-xs font-mono text-primary">{category.source}</p>
+                        )}
+                      </div>
                     </div>
 
                     {/* Skills */}

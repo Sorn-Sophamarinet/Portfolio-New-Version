@@ -1,6 +1,6 @@
 export const profile = {
   name: "Sorn Sophamarinet",
-  role: "Full Stack Web Developer",
+  role: "DevOps Engineer",
   image: {
     src: "/profile-photo.jpg",
     alt: "Sorn Sophamarinet portrait",

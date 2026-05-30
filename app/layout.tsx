@@ -8,25 +8,25 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Sorn Sophamarinet | Full Stack Web Developer',
-  description: 'Full Stack Web Developer specializing in React.js, Next.js, Laravel, and modern web technologies. Fresh graduate from Royal University of Phnom Penh.',
+  title: 'Sorn Sophamarinet | DevOps Engineer',
+  description: 'DevOps Engineer specializing in Docker, Kubernetes, CI/CD, cloud deployment, and modern web technologies. Fresh graduate from Royal University of Phnom Penh.',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/marinet-logo.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/marinet-logo.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/marinet-logo.png',
+        type: 'image/png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/marinet-logo.png',
   },
 }
 

@@ -1,93 +1,107 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Github, ExternalLink, Folder, ArrowRight, Code2, Layers, Database, Palette, Bot } from "lucide-react"
+import { Github, ExternalLink, Folder, ArrowRight, Code2, Bot, FileText, Briefcase, Network } from "@/components/fa-icons"
 
 const featuredProjects = [
   {
     title: "Autonomous Project",
     description:
-      "An autonomous web application focused on intelligent workflow automation, combining a responsive user interface with backend services for managing data, actions, and real-time project behavior.",
+      "A full-stack ISTAD project for autonomous learning workflows, combining a polished frontend experience with backend services, structured data, and deployment-ready architecture.",
     technologies: ["Next.js", "React.js", "TypeScript", "Spring Boot", "PostgreSQL", "Tailwind CSS"],
-    github: "#",
+    github: "https://github.com/Sorn-Sophamarinet",
     external: "https://autonomous-istad.com/home",
     icon: Bot,
     color: "from-emerald-500/20 to-cyan-500/20",
   },
   {
-    title: "E-Commerce Platform",
+    title: "DocuHub",
     description:
-      "A full-featured e-commerce platform built with React.js and Laravel, featuring product management, shopping cart, secure checkout, and admin dashboard for managing orders and inventory.",
-    technologies: ["React.js", "Laravel", "PostgreSQL", "Tailwind CSS", "Docker"],
-    github: "#",
-    external: "#",
-    icon: Layers,
+      "A document-focused web platform referenced in my project portfolio, built as a real deployed product with responsive pages and a production Vercel deployment.",
+    technologies: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    github: "https://github.com/Sorn-Sophamarinet",
+    external: "https://www.docuhub.me/",
+    icon: FileText,
     color: "from-cyan-500/20 to-blue-500/20",
   },
   {
-    title: "WordPress Custom Theme",
+    title: "Job Seek Platform",
     description:
-      "Custom WordPress theme development for business websites, including responsive design, SEO optimization, and integration with popular plugins for enhanced functionality.",
-    technologies: ["WordPress", "PHP", "JavaScript", "CSS", "MySQL"],
-    github: "#",
-    external: "#",
-    icon: Palette,
+      "A job-seeking web application deployed on Vercel, focused on browsing opportunities through a clean interface and practical user flow.",
+    technologies: ["React.js", "JavaScript", "Vercel", "Responsive UI"],
+    github: "https://github.com/Sorn-Sophamarinet",
+    external: "https://job-seek-seven.vercel.app/",
+    icon: Briefcase,
     color: "from-purple-500/20 to-pink-500/20",
   },
   {
-    title: "OpenCart Store Setup",
+    title: "Spring Microservice",
     description:
-      "Complete OpenCart e-commerce store setup with custom extensions, payment gateway integration, and inventory management system for small to medium businesses.",
-    technologies: ["OpenCart", "PHP", "MySQL", "Bootstrap", "REST API"],
-    github: "#",
+      "A Java Spring microservice project from my GitHub portfolio, showing backend service structure and API-oriented development.",
+    technologies: ["Java", "Spring Boot", "Microservices", "REST API"],
+    github: "https://github.com/Sorn-Sophamarinet/simple-spring-microservice",
     external: "#",
-    icon: Database,
+    icon: Network,
     color: "from-orange-500/20 to-red-500/20",
   },
 ]
 
 const otherProjects = [
   {
-    title: "Joomla CMS Website",
-    description: "Custom Joomla website with advanced content management features and user authentication system.",
-    technologies: ["Joomla", "PHP", "MySQL"],
-    github: "#",
+    title: "React E-Commerce",
+    description: "A React-based e-commerce project from GitHub focused on product browsing and storefront UI structure.",
+    technologies: ["React.js", "JavaScript", "E-Commerce"],
+    github: "https://github.com/Sorn-Sophamarinet/React-ecommerce",
     external: "#",
   },
   {
     title: "PHP E-Commerce",
-    description: "Pure PHP e-commerce solution with secure payment processing and inventory tracking.",
+    description: "A PHP e-commerce project covering classic server-rendered commerce flows and database-backed features.",
     technologies: ["PHP", "MySQL", "JavaScript"],
-    github: "#",
+    github: "https://github.com/Sorn-Sophamarinet/E-commerce-php",
     external: "#",
   },
   {
-    title: "UX/UI Design Portfolio",
-    description: "Collection of UI/UX designs created in Figma for various web and mobile applications.",
-    technologies: ["Figma", "UI/UX", "Prototyping"],
-    github: "#",
+    title: "Full Stack Project",
+    description: "A full-stack web project deployed on Vercel, combining TypeScript frontend work with practical app structure.",
+    technologies: ["TypeScript", "Full Stack", "Vercel"],
+    github: "https://github.com/Sorn-Sophamarinet/fullstack",
+    external: "https://fullstack-beige-phi.vercel.app",
+  },
+  {
+    title: "Spring REST API",
+    description: "A REST API project built with Java and Spring Boot for practicing backend endpoints and application layers.",
+    technologies: ["Java", "Spring Boot", "REST API"],
+    github: "https://github.com/Sorn-Sophamarinet/Spring-Rest-Api",
     external: "#",
   },
   {
-    title: "Spring Boot API",
-    description: "RESTful API built with Java Spring Framework for handling backend operations and data management.",
-    technologies: ["Java", "Spring Boot", "PostgreSQL"],
-    github: "#",
+    title: "GitOps Repo ITP",
+    description: "A GitOps repository for deployment practice with Kubernetes-related workflow and infrastructure configuration.",
+    technologies: ["GitOps", "Kubernetes", "ArgoCD", "Go Template"],
+    github: "https://github.com/Sorn-Sophamarinet/gitops-repo-itp",
     external: "#",
   },
   {
-    title: "Docker Dev Environment",
-    description: "Containerized development environment setup for consistent deployment across different machines.",
-    technologies: ["Docker", "Docker Compose", "Linux"],
-    github: "#",
+    title: "Kubernetes HA",
+    description: "A high-availability Kubernetes infrastructure practice repository using configuration templates and cluster setup concepts.",
+    technologies: ["Kubernetes", "Jinja", "DevOps", "Linux"],
+    github: "https://github.com/Sorn-Sophamarinet/kubernetes-ha",
     external: "#",
   },
   {
-    title: "Database Architecture",
-    description: "Complex database architecture design with optimized queries and proper indexing for performance.",
-    technologies: ["PostgreSQL", "Database Design", "SQL"],
-    github: "#",
+    title: "User Management System",
+    description: "A Java project focused on user management logic and object-oriented application structure.",
+    technologies: ["Java", "OOP", "User Management"],
+    github: "https://github.com/Sorn-Sophamarinet/User-Management-System",
     external: "#",
+  },
+  {
+    title: "Web Design 1",
+    description: "A deployed web design practice project showing responsive layout and frontend fundamentals.",
+    technologies: ["HTML", "CSS", "Web Design", "Vercel"],
+    github: "https://github.com/Sorn-Sophamarinet/WebDesign-1",
+    external: "https://web-design-1.vercel.app",
   },
 ]
 
@@ -188,24 +202,28 @@ export function Projects() {
                         </div>
                         
                         <div className="flex gap-4 pt-2">
-                          <a
-                            href={project.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group/link"
-                          >
-                            <Github className="h-5 w-5" />
-                            <span className="underline-animate">Code</span>
-                          </a>
-                          <a
-                            href={project.external}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group/link"
-                          >
-                            <ExternalLink className="h-5 w-5" />
-                            <span className="underline-animate">Live Demo</span>
-                          </a>
+                          {project.github !== "#" && (
+                            <a
+                              href={project.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group/link"
+                            >
+                              <Github className="h-5 w-5" />
+                              <span className="underline-animate">Code</span>
+                            </a>
+                          )}
+                          {project.external !== "#" && (
+                            <a
+                              href={project.external}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group/link"
+                            >
+                              <ExternalLink className="h-5 w-5" />
+                              <span className="underline-animate">Live Demo</span>
+                            </a>
+                          )}
                         </div>
                       </div>
                       
@@ -262,24 +280,28 @@ export function Projects() {
                     <Folder className="h-6 w-6 text-primary" />
                   </div>
                   <div className="flex gap-3">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors hover:scale-110"
-                      aria-label="GitHub"
-                    >
-                      <Github className="h-5 w-5" />
-                    </a>
-                    <a
-                      href={project.external}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors hover:scale-110"
-                      aria-label="External Link"
-                    >
-                      <ExternalLink className="h-5 w-5" />
-                    </a>
+                    {project.github !== "#" && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors hover:scale-110"
+                        aria-label="GitHub"
+                      >
+                        <Github className="h-5 w-5" />
+                      </a>
+                    )}
+                    {project.external !== "#" && (
+                      <a
+                        href={project.external}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors hover:scale-110"
+                        aria-label="External Link"
+                      >
+                        <ExternalLink className="h-5 w-5" />
+                      </a>
+                    )}
                   </div>
                 </div>
 
@@ -307,7 +329,7 @@ export function Projects() {
           {/* View More Button */}
           <div className="text-center mt-12">
             <a
-              href="https://github.com"
+              href="https://github.com/Sorn-Sophamarinet"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl glass text-foreground font-medium hover:text-primary hover:border-primary/50 transition-all duration-300 hover-lift group"
